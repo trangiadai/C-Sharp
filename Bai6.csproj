@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- EF Core 8 packages -->
+    <!-- Use the correct version for EF Core 8 -->
+  <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.2" />
+  <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.2">
+    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    <PrivateAssets>all</PrivateAssets>
+  </PackageReference>
+  <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0" />
+
+    <!-- Extensions compatible with EF Core 8 -->
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="8.0.0" />
+    <!-- <PackageReference Include="MySql.EntityFrameworkCore" Version="8.0.8" /> -->
+    <!-- =============================
+    Remove Incorrect MySQL Package Reference: Since you are using Pomelo as the MySQL provider (based on your csproj file), you don't need MySql.EntityFrameworkCore (the MySql.Data.EntityFrameworkCore provider). The correct MySQL provider you're using is Pomelo.EntityFrameworkCore.MySql. 
+    ===============================
+    dotnet ef dbcontext scaffold "server=localhost;database=booksales;uid=root;password=1234" Pomelo.EntityFrameworkCore.MySql -o Models
+    ===============================-->
+
+    <!-- MySQL providers for EF Core 8 -->
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.2" />
+
+    <!-- Remove or update MySql.EntityFrameworkCore if not needed -->
+    <!-- <PackageReference Include="MySql.EntityFrameworkCore" Version="8.0.8" /> -->
+
+    <!-- SQL Client for older ADO.NET functionality -->
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+  </ItemGroup>
+
+</Project>

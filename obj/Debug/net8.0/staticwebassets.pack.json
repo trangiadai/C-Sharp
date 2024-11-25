@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Bai6\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Bai6.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Bai6.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Bai6\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Bai6\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Bai6\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Bai6\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Bai6.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Bai6.props",
+      "PackagePath": "build\\Bai6.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Bai6.props",
+      "PackagePath": "buildMultiTargeting\\Bai6.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Bai6.props",
+      "PackagePath": "buildTransitive\\Bai6.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
